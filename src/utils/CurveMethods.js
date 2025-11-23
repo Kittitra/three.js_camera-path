@@ -38,7 +38,7 @@ function createCurveFromJSON(json) {
 
 function getTubeFromCurveAndJSONData(curve, json){
     const geometry = new THREE.TubeGeometry(curve, 100, .05, 8, true)
-    const material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true, side: THREE.DoubleSide });
+    const material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true, side: THREE.DoubleSide }); //mesh material
     const mesh = new THREE.Mesh(geometry, material);
 
 	return mesh
